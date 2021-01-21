@@ -1,5 +1,7 @@
 body {
   margin: 0px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.5rem;
 }
 
 ul {
@@ -42,4 +44,41 @@ img {
 .slide li.active {
   opacity: 1;
   transform: scale(1);
+}
+
+.arrow-nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.arrow-nav a {
+  color: #111;
+  text-decoration: none;
+  background: #FB5;
+  border: 1px solid #114;
+  padding: 5px 10px 5px 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .4);
+}
+
+
+[data-control="slide"] {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+[data-control="slide"] li a {
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: #FB5;
+  border-radius: 50%;
+  overflow: hidden;
+  text-indent: -999px;
+  margin: 5px;
+}
+
+[data-control="slide"] li.active a, [data-control="slide"] li a:hover {
+  background: #E54;
 }
